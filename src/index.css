@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Lobster&family=Roboto&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+button {
+  background-color: transparent;
+  font-family: inherit;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.accent__btn {
+  padding: 12px 73px;
+  border-radius: 35px;
+  border: 1px solid #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.002px;
+}
+
+.accent__btn:hover {
+  background-color: #f8a778;
+}
+
+.active {
+  color: #FFC3A0;
+}
+
+.my__container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding-top: 89px;
+}
+
+.home {}
+
+.home__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 24px 15px;
+  border-radius: 0 0 20px 20px;
+  background-color: #FFC3A0;
+  margin-bottom: 2px;
+}
+
+.home__info {
+  width: 46%;
+  padding: 83px 68px 48px 0;
+}
+
+.home__title {
+  font-family: 'Lobster', cursive;
+  margin-bottom: 33px;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+}
+
+.home__desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.008px;
+  margin-bottom: 50px;
+}
+
+.home__img {}
+
+.home__img img {}
+
+.home__big-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.home__images {
+  padding: 20px 0;
+}
+
+.recipes__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.recipes__wrapper {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0;
+  gap: 40px;
+}
+
+.recipes__title {
+  font-family: 'Lobster', cursive;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+}
+
+.recipes__input {
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.card {
+  padding: 25px;
+  /* width: 31.8%; */
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.card__img {
+  width: 100%;
+  height: 272px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__info {
+  padding: 13px 5px 0;
+  min-height: 315px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.card__desc {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.008px;
+  margin-bottom: 20px;
+}
+
+.share {
+  padding: 50px 0;
+}
+
+.share__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.share__img {
+  width: 50%;
+}
+
+.share__info {
+  width: 50%;
+}
+
+.share__text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36.023px;
+  margin-bottom: 20px;
+}
+
+
+.share__form {
+  width: 40%;
+  padding: 50px;
+  border-radius: 50px;
+  background-color: #FFC3A0;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.share__title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36.023px;
+  margin-bottom: 20px;
+}
+
+.share__inp {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.manual {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+  margin-bottom: 50px;
+}
+
+.favorites__wrapper {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0;
+  gap: 40px;
+}
