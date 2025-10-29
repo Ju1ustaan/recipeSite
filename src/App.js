@@ -6,12 +6,15 @@ import Home from "./pages/Home";
 import Recipes from "./pages/Recipes";
 import Share from "./pages/Share";
 import Favorites from "./pages/Favorites";
+import Auth from "./components/Auth";
+import { useState } from "react";
 
 const App = () => {
+  const [auth, setAuth] = useState(false)
   return (
     <div className="App min-h-screen bg-gray-100 min-w-screen flex flex-col justify-between">
       <Router>
-        <Header />
+        <Header setAuth={setAuth}/>
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"/recipes"} element={<Recipes />} />
@@ -20,6 +23,9 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
+      {
+        auth && <Auth setAuth={setAuth}/>
+      }
     </div>
   );
 }

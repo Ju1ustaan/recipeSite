@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({setAuth}) => {
   return (
       <header className="fixed w-full text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
         <div className="container flex flex-col items-end justify-between p-3.5 mx-auto md:flex-row">
@@ -26,9 +26,9 @@ const Header = () => {
           <NavLink to={'/favorites'} className="mr-5 text-2xl">
             <i class="fa-regular fa-heart"></i>
             </NavLink>
-            <a href="#_" className="text-2xl">
+            <button onClick={() => setAuth(true)} className="text-2xl">
             <i class="fa-regular fa-user"></i>
-            </a>
+            </button>
           </div>
         </div>
       </header>

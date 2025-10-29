@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware } from "redux";
+import { legacy_createStore as createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 const initialState = {
@@ -6,7 +6,6 @@ const initialState = {
 }
 
 const listReducer = (state = initialState, action) => {
-    console.log(action);
     switch (action.type) {
         case 'FETCH_RECIPES':
             return { ...state, list: action.data }
@@ -16,5 +15,6 @@ const listReducer = (state = initialState, action) => {
             return state
     }
 }
+
 
 export const store = createStore(listReducer, applyMiddleware(thunk))
