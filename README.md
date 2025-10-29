@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+README.md
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🍳 QA Tech — Платформа для обмена рецептами
 
-## Available Scripts
+Приложение, где пользователи могут делиться своими рецептами, просматривать рецепты других и сохранять понравившиеся в избранное.
 
-In the project directory, you can run:
+Проект создан с акцентом на простоту интерфейса, удобство взаимодействия и отзывчивый дизайн.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Технологии
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![React 19](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)
+![Vite 7](https://img.shields.io/badge/Vite-7-646cff?logo=vite&logoColor=white)
+![TypeScript 5.8](https://img.shields.io/badge/TypeScript-5.8-3178c6?logo=typescript&logoColor=white)
+![Tailwind CSS 4](https://img.shields.io/badge/TailwindCSS-4-38bdf8?logo=tailwindcss&logoColor=white)
+![React Query](https://img.shields.io/badge/React%20Query-5-ff4154?logo=reactquery&logoColor=white)
+![TanStack Query (React Query)](https://img.shields.io/badge/React%20Query-5-ff4154?logo=reactquery&logoColor=white)
+![i18next + react-i18next](https://img.shields.io/badge/i18next-ready-26a69a?logo=i18next&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix%20UI-ready-8b5cf6?logo=radixui&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-integrated-18181b?logo=react&logoColor=white)
+![React Router 7](https://img.shields.io/badge/React%20Router-7-ca4245?logo=reactrouter&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-3.2-ff7300?logo=recharts&logoColor=white)
+![FSD](https://img.shields.io/badge/FSD-Feature--Sliced--Design-0ea5e9?logo=archlinux&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-success)
+![Status](https://img.shields.io/badge/Status-Ready_to_use-brightgreen)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Структура проекта
 
-### `npm run build`
+src/
+├── assets/              # Изображения и статические ресурсы
+├── components/          # Повторно используемые компоненты (Auth, Header, Card, Footer и т.д.)
+├── pages/               # Основные страницы приложения (Home, Recipes, Favorites, Share)
+├── redux/               # Состояние приложения (store, actions, reducers)
+├── App.js               # Корневой компонент приложения
+├── index.js             # Точка входа
+├── index.css            # Tailwind стили
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧰 Команды
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Команда | Назначение |
+|----------|------------|
+| `npm start` | Запуск проекта в режиме разработки |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Основной функционал
+- 👨‍🍳 Публикация собственных рецептов через удобную форму
+- ❤️ Добавление рецептов в избранное
+- 🔍 Просмотр и фильтрация рецептов других пользователей
+- 📱 Адаптивный интерфейс на всех устройствах
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧩 Превью интерфейса
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Preview UI](./public/preview.png)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ✨ Автор
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Лугинов Дьулустаан**  
+Frontend Developer
+📫 Telegram: [@JulustaanL](https://t.me/JulustaanL)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
